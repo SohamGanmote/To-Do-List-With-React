@@ -1,0 +1,83 @@
+body {
+  background-color: #bface0;
+}
+.app-div {
+  background-color: white;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  transition: 0.3s;
+}
+.app-div h2 {
+  font-size: 30px;
+  margin: 10px;
+}
+.app-div input {
+  width: 50%;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  padding-top: 12px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.app-div button {
+  background-color: #645caa;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0px 10px;
+}
+.app-div p {
+  user-select: none;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-div p button {
+  background-color: #fa7070;
+  margin: 0px 10px 0px 0px;
+}
+.complet {
+  background-color: #7fb77e !important;
+}
+.display {
+  text-decoration: line-through;
+  color: rgb(88, 88, 88);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: transparent;
+  }
+  .app-div,
+  .app-div input {
+    width: auto;
+  }
+  .app-div p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .app-div p div {
+    margin-top: 10px;
+  }
+  .app-div button {
+    margin-top: 10px;
+  }
+}
